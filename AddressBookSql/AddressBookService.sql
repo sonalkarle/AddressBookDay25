@@ -58,3 +58,7 @@ UPDATE AddressBookservice SET Type = 'FRIENDS';
 UPDATE AddressBookservice SET Type = 'FAMILY' WHERE FirstName = 'Sachin' or FirstName = 'sneha';
 UPDATE AddressBookservice SET Type = 'PROFESSION' WHERE FirstName = 'Pratiksha';
 SELECT * FROM AddressBookservice;
+
+--UC10:Ability to get  number of contact person
+SELECT Type, COUNT(*) AS TYPE_COUNT FROM AddressBookservice GROUP BY Type;
+
