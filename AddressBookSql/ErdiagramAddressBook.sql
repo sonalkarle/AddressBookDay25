@@ -32,8 +32,6 @@ alter table AddressBookservice  Add  Country varchar (20);
 
 
 
---UC8:Ability to retrive the sorted list 
-SELECT * FROM AddressBookservice WHERE CITY = 'Mumbai' ORDER BY FirstName;
 
 
 --UC9:Ability to find name and type
