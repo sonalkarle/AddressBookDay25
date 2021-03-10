@@ -29,9 +29,19 @@ INSERT INTO AddressBookservice(FirstName, LastName, Address, City, State, Zip, P
 alter table AddressBookservice ADD Country varchar (10);
 update AddressBookservice set Country = 'India';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> UC5_Abilitytodelete
 
 --UC4:Ability to  edit contact
 UPDATE AddressBookservice SET PhoneNumber = '9969818133' WHERE FirstName = 'Ajinkya'
 SELECT * FROM AddressBookservice;
+<<<<<<< HEAD
 >>>>>>> UC4_Abilitytoedit
+=======
+
+--UC5:Ability to delete using name
+DELETE FROM AddressBookservice WHERE FirstName = 'Ajinkya';
+SELECT * FROM AddressBookservice;
+>>>>>>> UC5_Abilitytodelete
