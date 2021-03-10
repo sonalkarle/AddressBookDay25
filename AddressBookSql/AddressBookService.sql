@@ -42,9 +42,19 @@ SELECT * FROM AddressBookservice;
 SELECT * FROM AddressBookservice WHERE City = 'Mumbai';
 SELECT * FROM AddressBookservice WHERE State = 'Maharashtra';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> UC8_Sortinglist
 
 --UC7:Ability to understand the size
 SELECT CITY, COUNT(CITY) AS CITY_COUNT FROM AddressBookservice GROUP BY City;
 SELECT STATE, COUNT(STATE) AS STATE_COUNT FROM AddressBookservice GROUP BY State;
+<<<<<<< HEAD
 >>>>>>> UC7_Findsizeycityorstate
+=======
+
+
+--UC8:Ability to retrive the sorted list 
+SELECT * FROM AddressBookservice WHERE CITY = 'Mumbai' ORDER BY FirstName;
+>>>>>>> UC8_Sortinglist
