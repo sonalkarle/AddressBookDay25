@@ -91,6 +91,14 @@ insert into TypeTable select ID,Type from AddressBookservice;
 alter table AddressBookservice drop column Type;
 select * from Typetable;
 
+--UC13:Retrive the instruction after ER diagram
+SELECT * FROM AddressBookservice WHERE City = 'Mumbai';
+SELECT * FROM AddressBookservice WHERE State = 'Maharashtra';
+
+SELECT CITY, COUNT(CITY) AS CITY_COUNT FROM AddressBookservice GROUP BY City;
+SELECT STATE, COUNT(STATE) AS STATE_COUNT FROM AddressBookservice GROUP BY State;
+
+SELECT * FROM AddressBookservice WHERE CITY = 'Mumbai' ORDER BY FirstName;
 
 
 
