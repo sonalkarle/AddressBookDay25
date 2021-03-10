@@ -41,3 +41,10 @@ SELECT * FROM AddressBookservice;
 --UC6:Retrive the data from city and state
 SELECT * FROM AddressBookservice WHERE City = 'Mumbai';
 SELECT * FROM AddressBookservice WHERE State = 'Maharashtra';
+<<<<<<< HEAD
+=======
+
+--UC7:Ability to understand the size
+SELECT CITY, COUNT(CITY) AS CITY_COUNT FROM AddressBookservice GROUP BY City;
+SELECT STATE, COUNT(STATE) AS STATE_COUNT FROM AddressBookservice GROUP BY State;
+>>>>>>> UC7_Findsizeycityorstate
