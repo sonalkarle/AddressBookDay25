@@ -68,6 +68,28 @@ INSERT INTO  AddressBookservice (FirstName, LastName, Address, City, State, Zip,
 ('Sachin', 'Shinde', 'Vikroli', 'Mumbai', 'Maharashtra', '40007', '8806184087', 'shinde@gmail.com', 'FRIENDS');
 
 
+--UC12:Ability to create  ER diagram
+create table CountryTable
+(
+Id int,
+Country varchar (20)
+constraint Countrytable_foreign_Key_ID foreign key(ID) references AddressBookservice(ID) on delete cascade
+
+);
+insert into CountryTable select ID,Country from AddressBookservice;
+alter table AddressBookservice drop column Country;
+
+select * from CountryTable;
+create table Typetable
+(
+Id int,
+Type varchar (20)
+constraint Typetable_foreign_Key_ID foreign key(ID) references AddressBookservice(ID) on delete cascade
+
+);
+insert into TypeTable select ID,Type from AddressBookservice;
+alter table AddressBookservice drop column Type;
+select * from Typetable;
 
 
 
