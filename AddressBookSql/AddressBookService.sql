@@ -41,20 +41,20 @@ SELECT * FROM AddressBookservice;
 --UC6:Retrive the data from city and state
 SELECT * FROM AddressBookservice WHERE City = 'Mumbai';
 SELECT * FROM AddressBookservice WHERE State = 'Maharashtra';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> UC8_Sortinglist
 
 --UC7:Ability to understand the size
 SELECT CITY, COUNT(CITY) AS CITY_COUNT FROM AddressBookservice GROUP BY City;
 SELECT STATE, COUNT(STATE) AS STATE_COUNT FROM AddressBookservice GROUP BY State;
-<<<<<<< HEAD
->>>>>>> UC7_Findsizeycityorstate
-=======
 
 
 --UC8:Ability to retrive the sorted list 
 SELECT * FROM AddressBookservice WHERE CITY = 'Mumbai' ORDER BY FirstName;
->>>>>>> UC8_Sortinglist
+
+
+--UC9:Ability to find name and type
+ALTER table AddressBookservice ADD Type VARCHAR(20);
+SELECT * FROM AddressBookservice;
+UPDATE AddressBookservice SET Type = 'FRIENDS';
+UPDATE AddressBookservice SET Type = 'FAMILY' WHERE FirstName = 'Sachin' or FirstName = 'sneha';
+UPDATE AddressBookservice SET Type = 'PROFESSION' WHERE FirstName = 'Pratiksha';
+SELECT * FROM AddressBookservice;
